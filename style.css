@@ -137,6 +137,7 @@ h2 em {
 
 .actions {
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
     margin: 30px 0
 }
@@ -556,7 +557,8 @@ code {
 
 .skill-box h4 {
     margin: 0 0 13px;
-    font-size: 14px
+    color: #9cffb5;
+    font: 600 12px "JetBrains Mono", monospace
 }
 
 .skill-box p {
@@ -613,6 +615,13 @@ code {
 
 .cert-grid span {
     color: #6c797e
+}
+
+.timeline-heading {
+    margin: 34px 0 12px;
+    color: #9cffb5;
+    font: 600 12px "JetBrains Mono", monospace;
+    text-transform: uppercase
 }
 
 .timeline {
@@ -788,4 +797,23 @@ footer {
         display: block;
         margin: 4px 0
     }
+}
+/* Master-profile additions */
+.project-note { font-size: 11px !important; color: #718086 !important; margin-top: 14px; }
+.project-note strong { color: #9cffb5; }
+.cert-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 3px;
+    border-bottom: 1px solid #283136;
+    color: #cbd3d5;
+    font-size: 14px;
+}
+.cert-item span { color: #6c797e; white-space: nowrap; }
+.profile-links { margin-top: 0; }
+.profile-label { margin-top: 42px; }
+@media(max-width:600px) {
+    .cert-item { display: block; }
+    .cert-item span { display: block; margin-top: 6px; }
 }
